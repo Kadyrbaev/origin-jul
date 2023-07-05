@@ -37,7 +37,7 @@ const Main = () => {
           <img src={mom} alt="" />
       </marquee>
       </ImgCont>
-      <h1>Арыкбаева Бубайша</h1>
+      <h1 style={{color: "red"}}>Арыкбаева Бубайша</h1>
       <FormaInput ongetForm={getForm}/>
       {state.map((el)=>(
         <Render key={el.id} aty={el.value} text={el.text}/>
@@ -48,12 +48,14 @@ const Main = () => {
 
 export default Main
 
-const MainStyle = styled.main`
-  border: 2px solid blue;
+const MainStyle = styled.div`
+  /* border: 2px solid blue; */
   /* width: 100vw;
   height: 100vh; */
-  /* background-image: url("https://cdn.pixabay.com/photo/2016/11/19/18/57/godafoss-1840758_1280.jpg"); */
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/19/18/57/godafoss-1840758_1280.jpg");
   background-size: cover;
+  width: 800px;
+  height: 200vh;
 `
 const Mark = styled.h1`
   color: aqua;
