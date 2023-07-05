@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { styled } from 'styled-components'
 import FormaInput from './FormaInput'
-// import mom3 from "../assets/mom3.jpg"
-// import mom4 from "../assets/mom4.jpg"
-// import mom5 from "../assets/mom5.jpg"
-// import mom2 from "../assets/mom2.jpg"
-// import mom from "../assets/mom.jpg"
+import mom3 from "../assets/mom3.jpg"
+import mom4 from "../assets/mom4.jpg"
+import mom5 from "../assets/mom5.jpg"
+import mom2 from "../assets/mom2.jpg"
+import mom from "../assets/mom.jpg"
 import Render from './Render'
 
 
@@ -25,17 +25,17 @@ const Main = () => {
   return (
     <MainStyle>
       <Mark>
-          {/* <marquee>Mom happy birthday</marquee> */}
+          <marquee>Mom happy birthday</marquee>
       </Mark>
       <ImgCont>
-      {/* <marquee>
+      <marquee>
 
           <img src={mom3} alt="" />
           <img src={mom5} alt="" />
           <img src={mom4} alt="" />
           <img src={mom2} alt="" />
           <img src={mom} alt="" />
-      </marquee> */}
+      </marquee>
       </ImgCont>
       <h1>Арыкбаева Бубайша</h1>
       <FormaInput ongetForm={getForm}/>
@@ -50,9 +50,9 @@ export default Main
 
 const MainStyle = styled.main`
   border: 2px solid blue;
-  width: 100vw;
-  height: 100vh;
-  background-image: url("https://cdn.pixabay.com/photo/2016/11/19/18/57/godafoss-1840758_1280.jpg");
+  /* width: 100vw;
+  height: 100vh; */
+  /* background-image: url("https://cdn.pixabay.com/photo/2016/11/19/18/57/godafoss-1840758_1280.jpg"); */
   background-size: cover;
 `
 const Mark = styled.h1`
